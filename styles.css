@@ -26,6 +26,7 @@ header {
   position: relative;
 }
 
+/*Did not work propely for me should be ignored*/
 .navbar li a img {
   height: 50px;
   margin-right: 1.5rem;
@@ -114,7 +115,6 @@ header {
   color: #2b4c7e;
 }
 
-/* ===== CONTACT SECTION ===== */
 .contact {
   background-color: #d6c8a3;
   padding: 3rem 1.5rem;
