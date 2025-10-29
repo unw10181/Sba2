@@ -1,0 +1,193 @@
+/* Reset of CSS*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f0e6;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #d6c8a3;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.navbar li a img {
+  height: 50px;
+  margin-right: 1.5rem;
+  justify-content: flex-end;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navlinks li a:hover,
+.navlinks li a:focus {
+  color: #2b4c7e;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.hero {
+  background: url("https://www.buymayco.com/image/cache/catalog/mayco%20color/stains/ss237-1000x1000.jpg")
+    no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  background-color: #2b4c7e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #1e365c;
+}
+
+.about {
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h2 {
+  text-align: center;
+  color: #2b4c7e;
+  margin-bottom: 1.5rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+}
+
+.service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service h3 {
+  margin-top: 1rem;
+  color: #2b4c7e;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  background-color: #d6c8a3;
+  padding: 3rem 1.5rem;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #2b4c7e;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #2b4c7e;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e365c;
+}
+
+footer {
+  background-color: #2b4c7e;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/*  responsive design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #d6c8a3;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
+
+  .navlinks li {
+    text-align: center;
+    margin: 0.8rem 0;
+  }
+}

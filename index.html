@@ -12,11 +12,12 @@
     <header>
       <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <button class="hamburger" id="hamburger">☰</button>
-        <ul class="navlinks">
+        <ul class="navlinks" id="navlinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#about"></a>About Us</li>
           <li><a href="#services"></a>Services</li>
           <li><a href="#contact"></a>Contact</li>
+          <!-- <li><a href="#home"><img src="styles/image.jpg" alt="company logo" /></a></li>  -->
         </ul>
       </nav>
     </header>
@@ -43,7 +44,11 @@
         </article>
       </section>
 
-      <section class="services" aria-labelledby="services-heading">
+      <section
+        class="services"
+        aria-labelledby="services-heading"
+        id="services"
+      >
         <h2 id="services-heading">Our Services</h2>
         <div class="service">
           <img
@@ -79,7 +84,7 @@
         </div>
       </section>
 
-      <section class="contact" aria-labelledby="contact-heading">
+      <section class="contact" aria-labelledby="contact-heading" id="contact">
         <h2 id="contact-heading">Contact Us</h2>
         <form>
           <label for="name">Name:</label>
@@ -119,7 +124,7 @@
           ></textarea>
 
           <label for="button"></label>
-          <button type="submit">Send Message</button>
+          <button type="submit" id="submission">Send Message</button>
         </form>
       </section>
     </main>
