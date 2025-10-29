@@ -58,10 +58,13 @@ header {
   cursor: pointer;
 }
 
+/*I could only utilize the image with it as a background. 
+Could not figure out how to set an img div as a background and still align it properly. 
+*/
 .hero {
-  background: url("https://www.buymayco.com/image/cache/catalog/mayco%20color/stains/ss237-1000x1000.jpg")
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/009/484/467/small/modern-background-abstract-dark-brown-gradient-design-minimal-creative-background-landing-page-mosaic-cover-cool-graphic-eps10-vector.jpg")
     no-repeat center/cover;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 6rem 1.5rem;
 }

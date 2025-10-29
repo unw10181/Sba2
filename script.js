@@ -6,3 +6,4 @@ document.addEventListener("DOMContentLoaded", () => {
     navlinks.classList.toggle("active");
   });
 });
+// Code from hamburger nav bar worked in class 
